@@ -1,8 +1,10 @@
-<h1>Articles#index</h1>
-<% @articles.each do |article|%>
-<ul>
-  <li>
-    <div><%= link_to article.title, article_path(article) %></div>
-    <%= "#{article.title} - #{article.content[0..25]}..." %></li>
-</ul>
-<% end %>
+<div class="container">
+  <h1>Articles#index</h1>
+  <% @articles.each do |article|%>
+  <ul>
+    <li>
+      <div class="lead"><%= link_to article.title, article_path(article) %></div>
+      <%= "#{article.title} - #{article.content[0..25]}..." %></li>
+  </ul>
+  <% end %>
+</div>
